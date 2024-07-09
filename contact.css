@@ -168,3 +168,73 @@ footer .social-icon:hover {
     border-color: #2e8b3d;
 }
 
+#toggleNavButton {
+    display: none; /* Hide button by default on larger screens */
+    background-color: #39ad54;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+#toggleNavButton:hover {
+    background-color: #317e43;
+}
+
+@media (max-width: 768px) {
+    #toggleNavButton {
+        display: block; /* Display button on smaller screens */
+        margin-bottom: 10px; /* Optional: add some space between button and menu */
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header .logo img {
+        height: 40px;
+    }
+
+    header ul {
+        display: none; /* Hide menu by default on smaller screens */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul li {
+        margin: 10px 0;
+    }
+
+    .extra-content {
+        padding: 20px;
+    }
+
+    .extra-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .extra-box img {
+        margin: 0 auto 20px;
+    }
+
+    .extra-text h2 {
+        font-size: 1.5em;
+    }
+
+    .extra-text p {
+        font-size: 1em;
+    }
+
+    .extra-text .btn {
+        padding: 8px 16px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

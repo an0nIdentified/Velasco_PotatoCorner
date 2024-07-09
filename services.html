@@ -13,7 +13,8 @@
             <div class="logo">
                 <img src="cropped-Potato-Corner-Logo-300x100.png" alt="Logo">
             </div>
-            <ul>
+            <button id="toggleNavButton">NAVIGATE</button>
+            <ul id="mainMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
@@ -199,5 +200,12 @@
                     $('[data-toggle="tooltip"]').social-icon();
                 });
             </script>
+                 <script>
+                    $(document).ready(function() {
+                        $("#toggleNavButton").on('click', function() {
+                            $("#mainMenu").toggle(); // Toggle visibility of the main menu
+                        });
+                    });
+                </script>
         </body>
         </html>
