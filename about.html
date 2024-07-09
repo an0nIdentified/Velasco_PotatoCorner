@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Corner About</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="about.css">
+    <meta name="description" content="Potato Corner Menu and History">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="cropped-Potato-Corner-Logo-300x100.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    
+        <section class="history-section">
+            <div class="container">
+                <div class="history-header">
+                    <h1>HISTORY</h1>
+                </div>
+                <div class="history-content">
+                    <p>
+                        Anywhere you go in the Philippines, you’re bound to find a bright-green kiosk, with a smiling spud next to the now-familiar name: Potato Corner. Today, this food cart has become the top-of-mind entry point for budding entrepreneurs and has seen its business expand in the Philippines and overseas. Dubbed as the World’s Best Flavored Fries, Potato Corner has been a leading brand in the food industry for OVER 25 years.
+                    </p>
+                    <img src="history1.png" alt="Potato Corner History Image 1">
+                    <p>
+                        Potato Corner opened its first outlet in the Philippines in October 1992 and began franchising the year after. Today, it has grown from small carts into in-line stores found in almost every corner of the world – in malls, schools, hospitals, bus stations, amusement parks, and even tourist destinations in multiple countries. In every corner of the world, someone wants Potato Corner.
+                    </p>
+                    <img src="history2.jpg" alt="Potato Corner History Image 2">
+                    <p>
+                        Throughout the years, Potato Corner has garnered numerous awards, mostly recognizing its excellent business model and well-loved brand. It has received the Franchise Excellence Hall of Fame Award by the Philippine Franchise Association and Department of Trade and Industry in 2003, won Best Franchise of the Year on three consecutive years, and most recently, bagged the Global Franchise Award recognized by the same institution. Potato Corner is truly an iconic brand for kids and kids-at-heart and a distinguished business venture for entrepreneurs.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.youtube.com/user/PotatoCornerPH" class="social-icon" title="Subscribe on Youtube">YouTube</a>
+            <a href="https://www.facebook.com/PotatoCorner/" class="social-icon" title="Follow us on Facebook">Facebook</a>
+            <a href="https://x.com/potatocornerph" class="social-icon" title="Follow us on Twitter">Twitter</a>
+            <a href="https://www.instagram.com/potatocornerph/" class="social-icon" title="Follow us on Instagram">Instagram</a>
+        </div>
+        <p>© 2024 Potato Corner, All rights reserved. <br>
+            For educational purposes only.</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#contactUsButton").on('click', function() {
+                $('html, body').animate({
+                    scrollTop: $(".footer").offset().top
+                }, 1000);
+            });
+            $('[data-toggle="tooltip"]').social-icon();
+        });
+    </script>
+</body>
+</html>
